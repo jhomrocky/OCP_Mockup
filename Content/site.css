@@ -8,9 +8,42 @@
     padding-bottom: 30px;
 }
 
-#omni-pic{
+#omni-pic {
     margin-left: 20px;
     margin-right: 20px;
     padding-right: 0px;
     float: left;
+}
+
+/*Reviews Carousel*/
+#reviewCarousel {
+    text-align: center;
+    background-color: white;
+    margin: 4% auto 4% auto;
+}
+
+#reviewCarousel > h2 {
+    vertical-align: middle;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators li {
+    background-color: #474E5D;
+}
+
+.carousel-indicators .active {
+    background-color: #474E5D;
+}
+
+#reviewCarousel > .left.carousel-control {
+    color: #A3A7AE;
+    background: none;
+}
+
+#reviewCarousel > .right.carousel-control {
+    color: #A3A7AE;
+    background: none;
 }
