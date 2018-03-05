@@ -1,73 +1,157 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
     <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="//https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <link href="../Content/site.css" rel="stylesheet" />
-      
+
 </head>
 <body>
     <!--Header-->
     <div class="container-fluid topbar">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img src="/Content/Images/logo.png" id="omni-pic"/><h3>Omni Consumer Products</h3>
+                <img src="/Content/Images/logo.png" id="omni-pic" /><h3>Omni Consumer Products</h3>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <p>About   Products</p>
-                <!--Location box-->
+
+            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1">
+                <p>About</p>
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1">
+                <p>Products</p>
+            </div>
+
+            <!--Location box-->
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                <p>Location Box</p>
+            </div>
+
+
         </div>
     </div>
-
     <!--Picture & word carousel-->
-    <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+    <div id="picCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#reviewCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#reviewCarousel" data-slide-to="1"></li>
-            <li data-target="#reviewCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <h2><i>"I love it! I love it! I love it!"</i></h2>
-                <h2>Stella, Avid Napper</h2>
+                <img src="/Content/Images/slide1.jpg">
+                <div class="carousel-caption">
+                    <h1>Announcing Delta City</h1>
+                    <h3>We're transforming Detroit into an efficient, clean, harmonious city.</h3>
+                    <!--Learn more button here-->
+                </div>
             </div>
 
             <div class="item">
-                <h2><i>"The beds were just right!"</i></h2>
-                <h2>Goldilocks, Habitual Bed and Porridge Thief</h2>
+                <img src="/Content/Images/slide2.jpg">
+                <div class="carousel-caption">
+                    <h1>The Latest in Logging</h1>
+                    <h3>We are proud to introduce our latest deforestation technology.</h3>
+                </div>
             </div>
 
             <div class="item">
-                <h2><i>"I could sleep another 30 years!" </i></h2>
-                <h2>Austin Powers, International Man of Mystery</h2>
+                <img src="/Content/Images/slide3.jpg">
+                <div class="carousel-caption">
+                    <h1>Deep Space Mining</h1>
+                    <h3>Omni Consumer Products has started a new deep space mining program.</h3>
+                </div>
             </div>
         </div>
 
         <!-- Left and right controls -->
-        <a class="left carousel-control" href="#reviewCarousel" data-slide="prev">
+        <a class="left carousel-control" href="#picCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#reviewCarousel" data-slide="next">
+        <a class="right carousel-control" href="#picCarousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
-    
     <!--Descriptive paragraphs-->
-    <div>
-
+    <div class="container">
+        <div class="row" id="descText">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <h2>Lowe Technologies</h2>
+                <hr />
+                <p>
+                    Lorem ipsum leverage agile
+                    frameworks to provide a robust
+                    synopsis for high level overviews.
+                    Iterative approaches to corporate
+                    strategy foster collaborative
+                    thinking to further the overall
+                    value proposition. Organically
+                    grow the holistic world view of
+                    disruptive innovation via
+                    workplace diversity.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <h2>Mediabreak</h2>
+                <hr />
+                <p>
+                    Lorem ipsum podcasting
+                    operational change management
+                    inside of workflows to establish a
+                    framework. Taking seamless key
+                    performance indicators offline to
+                    maximise the long tail. Keeping
+                    your eye on the ball while
+                    performing a deep dive on the
+                    start-up mentality to derive
+                    convergence.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <h2>Security Concepts</h2>
+                <hr />
+                <p>
+                    Lorem ipsum capitalize on low
+                    hanging fruit to identify a ballpark
+                    value added activity to beta test.
+                    Override the digital divide with
+                    additional clickthroughs from
+                    DevOps. Nanotechnology
+                    immersion along the information
+                    highway will close the loop on
+                    focusing solely on the bottom
+                    line.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <h2>Urban Rehabilitators</h2>
+                <hr />
+                <p>
+                    Lorem ipsum collaboratively
+                    administrate empowered
+                    markets via plug-and-play
+                    networks. Dynamically
+                    procrastinate B2C users after
+                    installed base benefits.
+                    Dramatically visualize customer
+                    directed convergence without
+                    revolutionary ROI.
+                </p>
+            </div>
+        </div>
     </div>
 
     <!--Block text-->
@@ -76,10 +160,50 @@
     </div>
 
     <!--Footer-->
-    <div>
-        Products
-        Services
-        Legal
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <p>
+                    Products<br />
+                    Cyborgs<br />
+                    Space ships<br />
+                    Weapons<br />
+                    Personal Hygiene<br />
+                    Lab-grown Food
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <p>
+                    Services<br />
+                    Hospitals<br />
+                    Police force<br />
+                    Internet<br />
+                    Private military
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <p>
+                    Legal<br />
+                    Terms of service<br />
+                    Privacy Policy<br />
+                    Report a violation<br />
+                    Contact us
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <p>
+                    Copyright 2041, OCP Inc.<br />
+                    All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div>
+                <p>OCP: The only choice for your consumer needs.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

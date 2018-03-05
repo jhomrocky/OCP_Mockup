@@ -1,49 +1,37 @@
 ﻿body {
+
 }
 
+/* Top/header bar */
 .topbar {
     background-color: black;
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin: auto;
 }
 
+/* OCP Picture */
 #omni-pic {
     margin-left: 20px;
     margin-right: 20px;
-    padding-right: 0px;
+    padding-right: 0;
     float: left;
 }
 
-/*Reviews Carousel*/
-#reviewCarousel {
-    text-align: center;
-    background-color: white;
-    margin: 4% auto 4% auto;
+/* Pics Carousel */
+#picCarousel {
 }
 
-#reviewCarousel > h2 {
-    vertical-align: middle;
+.carousel-inner {
 }
 
-.carousel-indicators {
-    bottom: -40px;
-}
-
-.carousel-indicators li {
-    background-color: #474E5D;
-}
-
-.carousel-indicators .active {
-    background-color: #474E5D;
-}
-
-#reviewCarousel > .left.carousel-control {
+.left.carousel-control {
     color: #A3A7AE;
     background: none;
 }
 
-#reviewCarousel > .right.carousel-control {
+.right.carousel-control {
     color: #A3A7AE;
     background: none;
 }
