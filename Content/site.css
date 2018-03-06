@@ -1,4 +1,6 @@
 ﻿body {
+    font-family: 'Roboto', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 81.25%;
 }
 
 /* Top/header bar */
@@ -19,7 +21,9 @@
 }
 
 /* Pics Carousel */
-
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 .left.carousel-control {
     color: #A3A7AE;
@@ -31,11 +35,29 @@
     background: none;
 }
 
+.carousel-caption {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.carousel-indicators {
+    bottom: -1px;
+}
+
+/* 4 boxes of descriptive text */
+
+#descText {
+    margin: 30px 30px 30px 30px;
+}
 /* Style the tab */
 .tab {
+    float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 30%;
+    width: 10%;
     height: 300px;
 }
 
