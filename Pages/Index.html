@@ -4,7 +4,7 @@
     <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/Scripts/JavaScript.js"></script>
+    <script src="../Scripts/JavaScript.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="//https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700" rel="stylesheet">
     <link href="/Content/site.css" rel="stylesheet" />
 
 </head>
-<body onload="openTab(event, 'Efficiency')">
+<body>
     <!--Header-->
     <div class="container-fluid topbar">
         <div class="row">
@@ -45,9 +45,9 @@
             <div id="picCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#picCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#picCarousel" data-slide-to="1"></li>
+                    <li data-target="#picCarousel" data-slide-to="2"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -55,7 +55,7 @@
                     <div class="item active">
                         <img src="/Content/Images/slide1.jpg" class="img-responsive">
                         <div class="carousel-caption">
-                            <h2><strong>Announcing Delta City</strong></h2>
+                            <h2>Announcing Delta City</h2>
                             <h4>We're transforming Detroit into an efficient, clean, harmonious city.</h4>
                             <!--Learn more button here-->
                         </div>
@@ -64,7 +64,7 @@
                     <div class="item">
                         <img src="/Content/Images/slide2.jpg" class="img-responsive">
                         <div class="carousel-caption">
-                            <h2><strong>The Latest in Logging</strong></h2>
+                            <h2>The Latest in Logging</h2>
                             <h4>We are proud to introduce our latest deforestation technology.</h4>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                     <div class="item">
                         <img src="/Content/Images/slide3.jpg" class="img-responsive">
                         <div class="carousel-caption">
-                            <h2><strong>Deep Space Mining</strong></h2>
+                            <h2>Deep Space Mining</h2>
                             <h4>Omni Consumer Products has started a new deep space mining program.</h4>
                         </div>
                     </div>
@@ -92,116 +92,114 @@
     </div>
 
     <!--Descriptive paragraphs-->
+    <div class="container">
         <div class="row" id="descText">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                 <h4 class="text-center"><strong>Lowe Technologies</strong></h4>
                 <hr />
-                <h5>
-                    <small>
-                        Lorem ipsum leverage agile
-                        frameworks to provide a robust
-                        synopsis for high level overviews.
-                        Iterative approaches to corporate
-                        strategy foster collaborative
-                        thinking to further the overall
-                        value proposition. Organically
-                        grow the holistic world view of
-                        disruptive innovation via
-                        workplace diversity.
-                    </small>
-                </h5>
+                <h6>
+                    Lorem ipsum leverage agile
+                    frameworks to provide a robust
+                    synopsis for high level overviews.
+                    Iterative approaches to corporate
+                    strategy foster collaborative
+                    thinking to further the overall
+                    value proposition. Organically
+                    grow the holistic world view of
+                    disruptive innovation via
+                    workplace diversity.
+                </h6>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                 <h4 class="text-center"><strong>Mediabreak</strong></h4>
                 <hr />
-                <h5>
-                    <small>
-                        Lorem ipsum podcasting
-                        operational change management
-                        inside of workflows to establish a
-                        framework. Taking seamless key
-                        performance indicators offline to
-                        maximise the long tail. Keeping
-                        your eye on the ball while
-                        performing a deep dive on the
-                        start-up mentality to derive
-                        convergence.
-                    </small>
-                </h5>
+                <h6>
+                    Lorem ipsum podcasting
+                    operational change management
+                    inside of workflows to establish a
+                    framework. Taking seamless key
+                    performance indicators offline to
+                    maximise the long tail. Keeping
+                    your eye on the ball while
+                    performing a deep dive on the
+                    start-up mentality to derive
+                    convergence.
+                </h6>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                 <h4 class="text-center"><strong>Security Concepts</strong></h4>
                 <hr />
-                <h5>
-                    <small>
-                        Lorem ipsum capitalize on low
-                        hanging fruit to identify a ballpark
-                        value added activity to beta test.
-                        Override the digital divide with
-                        additional clickthroughs from
-                        DevOps. Nanotechnology
-                        immersion along the information
-                        highway will close the loop on
-                        focusing solely on the bottom
-                        line.
-                    </small>
-                </h5>
+                <h6>
+                    Lorem ipsum capitalize on low
+                    hanging fruit to identify a ballpark
+                    value added activity to beta test.
+                    Override the digital divide with
+                    additional clickthroughs from
+                    DevOps. Nanotechnology
+                    immersion along the information
+                    highway will close the loop on
+                    focusing solely on the bottom
+                    line.
+                </h6>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                 <h4 class="text-center"><strong>Urban Rehabilitators</strong></h4>
                 <hr />
-                <h5>
-                    <small>
-                        Lorem ipsum collaboratively
-                        administrate empowered
-                        markets via plug-and-play
-                        networks. Dynamically
-                        procrastinate B2C users after
-                        installed base benefits.
-                        Dramatically visualize customer
-                        directed convergence without
-                        revolutionary ROI.
-                    </small>
-                </h5>
-            </div>
-        </div>
-    <hr />
-    <!--Block text with tabs-->
-    <div class="container">
-        <div class="row">
-            <h3 class="text-center"><strong>Doing good, one product at a time.</strong></h3>
-            <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Efficiency')"><h5><strong>Efficiency</strong></h5></button>
-                <button class="tablinks" onclick="openTab(event, 'Sustainability')"><h5><strong>Sustainability</strong></h5></button>
-                <button class="tablinks" onclick="openTab(event, 'Doing_good')"><h5><strong>Doing Good</strong></h5></button>
-            </div>
-
-            <div id="Efficiency" class="tabcontent">
-                <h4>
-                    Efficiently unleash cross-media information without cross-media
-                    value. Quickly maximize timely deliverables for real-time schemas.
-                    Dramatically maintain clicks-and-mortar solutions without functional
-                    solutions.<br /><br />
-                    Completely synergize resource taxing relationships via premier niche
-                    markets. Professionally cultivate one-to-one customer service with
-                    robust ideas. Dynamically innovate resource-leveling customer service
-                    for state of the art customer service.<br /><br />
-                    Collaboratively administrate empowered markets via plug-and-play
-                    networks. Dynamically procrastinate B2C users after installed base
-                    benefits. Dramatically visualize customer directed convergence
-                    without revolutionary ROI.
-                </h4>
-            </div>
-
-            <div id="Sustainability" class="tabcontent">
-                <h4>Paris is the capital of France.</h4>
-            </div>
-
-            <div id="Doing_good" class="tabcontent">
-                <h4>Tokyo is the capital of Japan.</h4>
+                <h6>
+                    Lorem ipsum collaboratively
+                    administrate empowered
+                    markets via plug-and-play
+                    networks. Dynamically
+                    procrastinate B2C users after
+                    installed base benefits.
+                    Dramatically visualize customer
+                    directed convergence without
+                    revolutionary ROI.
+                </h6>
             </div>
         </div>
     </div>
+    <!-- Block text with tabs -->
+    <div class="container">
+        <div class="row" id="textbox_with_tabs">
+            <!-- tabs -->
+            <h3 class="text-center">Doing good, one product at a time.</h3><br />
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                <ul class="nav nav-tabs nav-stacked">
+                    <li class="active text-center"><a href="#efficiency" data-toggle="tab">Efficiency</a></li>
+                    <li class="text-center"><a href="#sustainability" data-toggle="tab">Sustainability</a></li>
+                    <li class="text-center"><a href="#doing_good" data-toggle="tab">Doing Good</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="efficiency">
+                        <h4>
+                            Efficiently unleash cross-media information without cross-media
+                            value. Quickly maximize timely deliverables for real-time schemas.
+                            Dramatically maintain clicks-and-mortar solutions without functional
+                            solutions.<br /><br />
+                            Completely synergize resource taxing relationships via premier niche
+                            markets. Professionally cultivate one-to-one customer service with
+                            robust ideas. Dynamically innovate resource-leveling customer service
+                            for state of the art customer service.<br /><br />
+                            Collaboratively administrate empowered markets via plug-and-play
+                            networks. Dynamically procrastinate B2C users after installed base
+                            benefits. Dramatically visualize customer directed convergence
+                            without revolutionary ROI.
+                        </h4>
+                    </div>
+                    <div class="tab-pane" id="sustainability">
+                        <p>because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>
+                    </div>
+                    <div class="tab-pane" id="doing_good">
+                        <p>meant to identify articles which deserve editor attention because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /tabs -->
     <!--Footer-->
     <div class="container">
         <div class="row">
