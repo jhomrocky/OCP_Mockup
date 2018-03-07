@@ -53,6 +53,7 @@
     font-size: 17px;
 }
 
+
 .left.carousel-control {
     color: #A3A7AE;
     background: none;
@@ -62,6 +63,8 @@
     color: #A3A7AE;
     background: none;
 }
+
+
 
 @media (max-width: 500px) {
     .carousel-caption {
@@ -86,13 +89,30 @@
     }
 }
 
+.carousel-caption {
+    padding-top: 5px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 .carousel-indicators {
     bottom: -1px;
 }
 
-/* 4 boxes of descriptive text */
+/* Carousel button styling */
+#picCarousel > div > div:nth-child(1) > div > a,
+#picCarousel > div > div:nth-child(2) > div > a,
+#picCarousel > div > div:nth-child(3) > div > a {
+    background-color: #FFC000;
+    color: black;
+    border-radius: 0;
+}
 
+
+/* 4 boxes of descriptive text */
 #descText {
     margin: 50px 50px 50px 50px;
     border-bottom: 1px solid lightgray;
@@ -181,20 +201,19 @@
     }
 }
 
-
 .nav-tabs {
     border-bottom: 0;
 }
 
-.nav-tabs > li > a {
-    background-color: #E7E6E6;
-    color: black;
-}
-
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
 .nav-tabs > li > a:hover {
     background-color: #FFC000;
+    color: black;
+}
+.nav-tabs > li > a {
+    background-color: #E7E6E6;
     color: black;
 }
 
@@ -221,7 +240,7 @@
     color: gray;
 }
 
-.textbox_with_tabs > div > div.col-xs-12.col-sm-9.col-md-10 {
+.textbox_with_tabs > div > .col-xs-12.col-sm-9.col-md-10 {
     border: 5px solid #FFC000;
     padding-left: 20px;
     padding-right: 20px;
