@@ -6,17 +6,44 @@
 .topbar {
     background-color: black;
     color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding: 25px 65px 25px 65px;
+    width: 100%;
 }
 
-/* OCP Picture */
-/*#omni-pic {
-    margin-left: 20px;
-    margin-right: 20px;
-}*/
+@media(max-width: 767px) {
+    .ocppic > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ocpname {
+        text-align: center;
+    }
+}
+
+@media(min-width: 768px) {
+    .ocppic > img {
+        max-width: 45px;
+        max-height: 45px;
+    }
+}
+
+
+.ocpname,
+.aboutlink,
+.productslink,
+.locationbox {
+    padding: 15px 10px 10px 10px;
+}
+
+.ocpname > h4,
+.aboutlink > p,
+.productslink > p,
+.locationbox > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 
 
@@ -36,14 +63,20 @@
     background: none;
 }
 
+@media (max-width: 500px) {
+    .carousel-caption {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        max-width: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 
-.carousel-caption {
-    padding-top: 10px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    .carousel-caption > h2 {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -52,6 +85,7 @@
         font-size: 70%;
     }
 }
+
 
 .carousel-indicators {
     bottom: -1px;
@@ -88,7 +122,7 @@
 
 
 /* Used to make sure bottom border lines up with lorem ipsum text on big screens */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     #descText > div:nth-child(1) {
         padding-left: 0;
     }
@@ -99,14 +133,61 @@
 }
 
 /* Tab styling */
-.nav-tabs > li.active > a,
-.nav-tabs > li > a {
-    border-radius: 0;
-    margin-right: -1px;
+.nav-tabs > li.active,
+.nav-tabs > li {
+    margin-bottom: 5px;
+}
+
+/* To ensure the Tabs don't get massive on large screens (first media query) or mobile screens (one after this) */
+@media(min-width: 1441px) {
+    .nav-tabs > li.active > a,
+    .nav-tabs > li > a {
+        border-radius: 0;
+        margin-right: -1px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+@media(max-width: 767px) {
+    .nav-tabs > li.active > a,
+    .nav-tabs > li > a {
+        border-radius: 0;
+        margin-right: -1px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+/* For laptops */
+@media(min-width: 1025px) and (max-width: 1440px) {
+    .nav-tabs > li.active > a,
+    .nav-tabs > li > a {
+        border-radius: 0;
+        margin-right: -1px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+/* For other screen sizes */
+@media(max-width: 1024px) and (min-width: 768px) {
+    .nav-tabs > li.active > a,
+    .nav-tabs > li > a {
+        border-radius: 0;
+        margin-right: -1px;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
+
+
+.nav-tabs {
+    border-bottom: 0;
 }
 
 .nav-tabs > li > a {
-    background-color: lightpink;
+    background-color: #E7E6E6;
     color: black;
 }
 
@@ -118,7 +199,7 @@
 }
 
 /* Removes space between tabs and box & helps to center */
-.textbox_with_tabs > div > .col-sm-12.col-md-2 {
+.textbox_with_tabs > div > .col-xs-12.col-sm-3.col-md-2 {
     padding-left: 0;
     padding-right: 0;
     margin-right: 0;
@@ -130,7 +211,17 @@
     color: gray;
 }
 
-.textbox_with_tabs > div > div.col-sm-12.col-md-10 {
+#sustainability > h3 > small {
+    font-weight: 300;
+    color: gray;
+}
+
+#doing_good > h3 > small {
+    font-weight: 300;
+    color: gray;
+}
+
+.textbox_with_tabs > div > div.col-xs-12.col-sm-9.col-md-10 {
     border: 5px solid #FFC000;
     padding-left: 20px;
     padding-right: 20px;
@@ -139,23 +230,30 @@
 
 .textbox_with_tabs {
     padding-bottom: 80px;
-    border-bottom: 5px solid lightgray;
+    border-bottom: 5px solid #808080;
 }
 
-body > div.container-fluid.textbox_with_tabs > div {
+.textbox_with_tabs > div {
     padding-left: 15%;
     padding-right: 15%;
 }
 
 .extralinks {
     color: white;
+    font-weight: 300;
 }
 
 .footer {
     background-color: black;
-    padding: 20px 20px 20px 20px;
+    padding: 25px 20px 20px 20px;
 }
 
-.trademark {
+
+.trademark > h4 {
+    font-weight: 300;
     color: #FFC000;
+}
+
+#copyright {
+    padding-top: 40px;
 }
