@@ -25,12 +25,12 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .ocppic {
-        padding-right: 0;
-        padding-bottom: 10px;
+    
+    .col-xs-12.col-sm-1.ocppic {
+        padding: 0 0 10px 0;
     }
 
-    .locationbox {
+    .locationbox.ui-widget {
         padding: 10px 10px 10px 10px;
     }
     .ocpname {
