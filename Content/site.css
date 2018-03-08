@@ -1,5 +1,5 @@
 ﻿body {
-    font-family: 'Roboto', 'Segoe UI', 'Tahoma', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Top/header bar */
@@ -10,13 +10,29 @@
     width: 100%;
 }
 
+.aboutlink > p > a,
+.aboutlink > p > a:hover,
+.productslink > p > a,
+.productslink > p > a:hover {
+    color: white;
+}
+
+
+/* Padding fix for smaller screens to center words */
 @media(max-width: 767px) {
     .ocppic > img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+    .ocppic {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
 
+    .locationbox {
+        padding: 10px 10px 10px 10px;
+    }
     .ocpname {
         text-align: center;
     }
@@ -29,13 +45,24 @@
     }
 }
 
+.ocppic {
+    padding-left: 0;
+    padding-right: 10px;
+}
 
-.ocpname,
-.aboutlink,
+/* Padding for larger screens on the OCP Name column at the top */
+@media(min-width: 768px) {
+    .ocpname {
+        padding: 15px 10px 10px 0;
+    }
+}
+
+.locationbox,
 .productslink,
-.locationbox {
+.aboutlink {
     padding: 15px 10px 10px 10px;
 }
+
 
 .ocpname > h4,
 .aboutlink > p,
@@ -45,6 +72,23 @@
     margin-bottom: 0;
 }
 
+
+
+/* Find a location box */
+.ui-autocomplete-input,
+.ui-autocomplete {
+    background-color: #595959;
+    color: #AAAAAA;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.locationbox {
+    padding: 10px 10px 10px 30px;
+}
 
 
 /* Pics Carousel */
@@ -74,6 +118,7 @@
         max-width: 100%;
         left: 0;
         width: 100%;
+        background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.4);
     }
 
@@ -95,6 +140,7 @@
     max-width: 100%;
     left: 0;
     width: 100%;
+    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -103,6 +149,7 @@
 }
 
 /* Carousel button styling */
+
 #picCarousel > div > div:nth-child(1) > div > a,
 #picCarousel > div > div:nth-child(2) > div > a,
 #picCarousel > div > div:nth-child(3) > div > a {
@@ -116,6 +163,7 @@
 
 
 /* 4 boxes of descriptive text */
+
 #descText {
     padding-bottom: 50px;
     margin: 50px 50px 0 50px;
@@ -131,6 +179,16 @@
     color: grey;
 }
 
+/* Centers text under Lowe Tech, Mediareak, etc on tablet/smaller screens */
+@media(max-width:991px){
+    #descText > div:nth-child(1) > h6,
+    #descText > div:nth-child(2) > h6,
+    #descText > div:nth-child(3) > h6,
+    #descText > div:nth-child(4) > h6 {
+        text-align: center;
+    }
+}
+
 
 /* Horizontal rules under Lowe Tech, Mediabreak, etc styling */
 
@@ -144,7 +202,10 @@
     margin: 5px 25% 10px 25%;
 }
 
-body > div.container-fluid.textbox_with_tabs > div > h3 {
+
+/* Tab styling */
+
+.textbox_with_tabs > div > h3 {
     margin-top: 60px;
 }
 
@@ -159,7 +220,7 @@ body > div.container-fluid.textbox_with_tabs > div > h3 {
     }
 }
 
-/* Tab styling */
+
 .nav-tabs > li.active,
 .nav-tabs > li {
     margin-bottom: 5px;
@@ -219,6 +280,7 @@ body > div.container-fluid.textbox_with_tabs > div > h3 {
     background-color: #FFC000;
     color: black;
 }
+
 .nav-tabs > li > a {
     background-color: #E7E6E6;
     color: black;

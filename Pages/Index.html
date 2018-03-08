@@ -1,10 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <!-- The Murphy's Secret Hideout location from the "Find a Location" box may or may not be an easter egg :) -->
+
     <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--JS script contains "Find a location" array of objects-->
     <script src="../Scripts/JavaScript.js"></script>
+    <!--jQuery UI css sheet-->
+    <link href="../Scripts/jquery-ui.css" rel="stylesheet" />
+
+    <!--Bootstrap CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,32 +19,38 @@
     <link rel="stylesheet" href="//https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700" rel="stylesheet">
-    <link href="/Content/site.css" rel="stylesheet" />
 
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700" rel="stylesheet">
+    <!--CSS sheet-->
+    <link href="/Content/site.css" rel="stylesheet" />
 </head>
 <body>
-    <!--Header-->
-    <div class="container topbar">
-        <div class="row">
-            <div class="col-xs-12 col-sm-1 ocppic">
-                <img src="/Content/Images/logo.png" />
-            </div>
-            <div class="col-xs-12 col-sm-5 ocpname">
-                <h4>Omni Consumer Products</h4>
-            </div>
-            <div class="col-xs-12 col-sm-1 aboutlink">
-                <p class="text-center">About</p>
-            </div>
-            <div class="col-xs-12 col-sm-1 productslink">
-                <p class="text-center">Products</p>
-            </div>
-            <!--Location box-->
-            <div class="col-xs-12 col-sm-4 locationbox">
-                <p class="text-center">Location Box</p>
+
+    <header>
+        <!--Header-->
+        <div class="container topbar">
+            <div class="row">
+                <div class="col-xs-12 col-sm-1 ocppic">
+                    <img src="/Content/Images/logo.png" />
+                </div>
+                <div class="col-xs-12 col-sm-5 ocpname">
+                    <h4>Omni Consumer Products</h4>
+                </div>
+                <div class="col-xs-12 col-sm-1 aboutlink">
+                    <p class="text-center"><a href="#about">About</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-1 productslink">
+                    <p class="text-center"><a href="#products">Products</a></p>
+                </div>
+                <!--Find a location-->
+                <!--Locations are stored in array in javascript.js-->
+                <div class="col-xs-12 col-sm-4 locationbox ui-widget">
+                    <input placeholder="Find a location..." id="autocomplete" />
+                </div>
             </div>
         </div>
-    </div>
+    </header>
     <!--Picture & word carousel-->
     <div class="container-fluid">
         <div class="row">
@@ -56,8 +69,7 @@
                         <div class="carousel-caption">
                             <h2>Announcing Delta City</h2>
                             <h4>We're transforming Detroit into an efficient, clean, harmonious city.</h4>
-                            <a href="http://robocop.wikia.com/wiki/Omni_Consumer_Products" role="button" class="btn" target="_blank"><strong>LEARN MORE</strong></a>
-                            <!--Learn more button here-->
+                            <a href="http://robocop.wikia.com/wiki/Omni_Consumer_Products" role="button" class="btn" target="_blank" alt="Delta City"><strong>LEARN MORE</strong></a>
                         </div>
                     </div>
 
@@ -66,7 +78,7 @@
                         <div class="carousel-caption">
                             <h2>The Latest in Logging</h2>
                             <h4>We are proud to introduce our latest deforestation technology.</h4>
-                            <a href="http://robocop.wikia.com/wiki/Omni_Consumer_Products" role="button" class="btn" target="_blank"><strong>LEARN MORE</strong></a>
+                            <a href="http://robocop.wikia.com/wiki/Omni_Consumer_Products" role="button" class="btn" target="_blank" alt="Forest Picture"><strong>LEARN MORE</strong></a>
                         </div>
                     </div>
 
@@ -75,7 +87,7 @@
                         <div class="carousel-caption">
                             <h2>Deep Space Mining</h2>
                             <h4>Omni Consumer Products has started a new deep space mining program.</h4>
-                            <a href="http://robocop.wikia.com/wiki/Omni_Consumer_Products" role="button" class="btn" target="_blank"><strong>LEARN MORE</strong></a>
+                            <a href="http://robocop.wikia.com/wiki/Omni_Consumer_Products" role="button" class="btn" target="_blank" alt="Cliffs and Stars"><strong>LEARN MORE</strong></a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +108,7 @@
     </div>
 
     <!--Descriptive paragraphs-->
-    <div class="container desctext">
+    <div class="container desctext" id="about">
         <div class="row" id="descText">
             <div class="col-sm-12 col-md-3">
                 <h4 class="text-center"><strong>Lowe Technologies</strong></h4>
@@ -166,7 +178,7 @@
     <!-- Block text with tabs -->
     <div class="container-fluid textbox_with_tabs">
         <div class="row">
-            <!-- tabs -->
+            <!-- Tabs -->
             <h3 class="text-center">Doing good, one product at a time.</h3><br />
             <div class="col-xs-12 col-sm-3 col-md-2">
                 <ul class="nav nav-tabs nav-stacked">
@@ -175,6 +187,7 @@
                     <li class="text-center"><a href="#doing_good" data-toggle="tab">Doing Good</a></li>
                 </ul>
             </div>
+            <!-- Content next to tab -->
             <div class="col-xs-12 col-sm-9 col-md-10">
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="efficiency">
@@ -202,10 +215,10 @@
                                 Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /><br />
-                                Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Charizard Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Charizard Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /><br />
-                                Wartortle Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Wartortle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing
                             </small>
                         </h3>
@@ -228,49 +241,65 @@
             </div>
         </div>
     </div>
-    <!-- /tabs -->
+    
     <!--Footer-->
-    <div class="container-fluid footer">
-        <div class="row extralinks">
-            <div class="col-xs-12 col-sm-3" id="products">
-                <p>
-                    <u><strong>Products</strong></u><br />
-                    Cyborgs<br />
-                    Space ships<br />
-                    Weapons<br />
-                    Personal Hygiene<br />
-                    Lab-grown Food
-                </p>
+    <footer>
+        <div class="container-fluid footer" id="products">
+            <div class="row extralinks">
+                <div class="col-xs-12 col-sm-3" id="products">
+                    <p>
+                        <u><strong>Products</strong></u><br />
+                        Cyborgs<br />
+                        Space ships<br />
+                        Weapons<br />
+                        Personal Hygiene<br />
+                        Lab-grown Food
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <p>
+                        <u><strong>Services</strong></u><br />
+                        Hospitals<br />
+                        Police force<br />
+                        Internet<br />
+                        Private military
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <p>
+                        <u><strong>Legal</strong></u><br />
+                        Terms of service<br />
+                        Privacy Policy<br />
+                        Report a violation<br />
+                        Contact us
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-3" id="copyright">
+                    <p class="text-center">
+                        Copyright 2041, OCP Inc.<br />
+                        All rights reserved.
+                    </p>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-3">
-                <p>
-                    <u><strong>Services</strong></u><br />
-                    Hospitals<br />
-                    Police force<br />
-                    Internet<br />
-                    Private military
-                </p>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-                <p>
-                    <u><strong>Legal</strong></u><br />
-                    Terms of service<br />
-                    Privacy Policy<br />
-                    Report a violation<br />
-                    Contact us
-                </p>
-            </div>
-            <div class="col-xs-12 col-sm-3" id="copyright">
-                <p class="text-center">
-                    Copyright 2041, OCP Inc.<br />
-                    All rights reserved.
-                </p>
+            <div class="row trademark">
+                <h4 class="text-center">OCP: The <i>only</i> choice for your consumer needs.</h4>
             </div>
         </div>
-        <div class="row trademark">
-            <h4 class="text-center">OCP: The <i>only</i> choice for your consumer needs.</h4>
-        </div>
-    </div>
+    </footer>
 
+
+    <!--jQuery autocomplete scripts, Array is in javascript.js-->
+    <script src="../Scripts/external/jquery/jquery.js"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#autocomplete").autocomplete({
+                source: cities,
+                select: function (event, ui) {
+                    window.location.href = ui.item.value;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
